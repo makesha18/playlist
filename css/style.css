@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+body {
+    font: 300 20px/1.6 "Roboto", sans-serif;
+    background: #51576d url(../img/IS-stage-background.jpg) 50% no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    color: #081a31;
+}
+
+
+/* Layout */
+
+.ba-container {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Typography */
+
+a,
+input[type="submit"],
+input[type="button"],
+button {
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+    display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover {}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {}
+
+textarea {}
+
+.ba-playlist {
+    background-color: #faf6f6;
+    opacity: 0.9;
+    border-radius: 20px;
+    max-width: 500px;
+    padding: 30px 20px;
+    margin: 30px auto;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.ba-playlist__title {
+    color: #f70606;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 25px;
+    font-size: 24px;
+}
+
+.ba-track {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #252525;
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+.ba-track__song {
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.ba-track__duration {
+    display: inline-block;
+    padding-right: 10px;
+    margin-right: 6px;
+    border-right: 1px solid rgba(164, 163, 169, 0.6);
+}
+
+.ba-track__top {
+    color: #048a62;
+    margin-bottom: 5px;
+}
+
+.ba-track__artist {
+    text-transform: capitalize;
+}
+
+.ba-track__like {
+    margin-top: 14px;
+    width: 26px;
+    height: 26px;
+    float: right;
+    fill: #048a62;
+    cursor: pointer;
+}
+
+.ba-track__like:hover {
+    fill: #f80707;
+}
